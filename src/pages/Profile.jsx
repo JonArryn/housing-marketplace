@@ -19,8 +19,14 @@ function Profile() {
   const navigate = useNavigate();
 
   const onLogout = () => {
-    auth.signOut();
-    navigate("/");
+    try {
+      auth.signOut();
+      navigate("/");
+    } catch (error) {
+      toast.error("Something weird happened when signing out");
+      console.log(error);
+      navigate("/");
+    }
   };
 
   const onSubmit = async () => {
