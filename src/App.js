@@ -10,6 +10,7 @@ import Profile from "./pages/Profile";
 import SignIn from "./pages/SignIn";
 import SignUp from "./pages/SignUp";
 import ForgotPassword from "./pages/ForgotPassword";
+import CreateListing from "./pages/CreateListing";
 // private route
 import PrivateRoute from "./components/PrivateRoute";
 // toast pop ups
@@ -29,6 +30,7 @@ function App() {
           </Route>
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
+          <Route path="/create-listing" element={<CreateListing />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
         <Navbar />
