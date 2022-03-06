@@ -13,6 +13,7 @@ import ForgotPassword from "./pages/ForgotPassword";
 import CreateListing from "./pages/CreateListing";
 import Listing from "./pages/Listing";
 import Contact from "./pages/Contact";
+import EditListing from "./pages/EditListing";
 // private route
 import PrivateRoute from "./components/PrivateRoute";
 // toast pop ups
@@ -39,6 +40,7 @@ function App() {
           <Route path="/sign-in" element={<SignIn />} />
           <Route path="/sign-up" element={<SignUp />} />
           <Route path="/create-listing" element={<CreateListing />} />
+          <Route path="/edit-listing/:listingId" element={<EditListing />} />
           <Route path="/forgot-password" element={<ForgotPassword />} />
         </Routes>
         <Navbar />
